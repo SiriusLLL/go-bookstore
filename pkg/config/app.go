@@ -11,6 +11,7 @@ var (
 )
 
 func Connet() {
+	// 开启MySQL数据库的连接
 	d, err := gorm.Open("mysql", "root:123456@/test?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)

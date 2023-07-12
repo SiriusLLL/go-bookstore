@@ -5,7 +5,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-// 建立路由
+// 路由
 var RegisterBookStoreRoutes = func(router *mux.Router) {
 	router.HandleFunc("/book/", controllers.CreateBook).Methods("POST")
 	router.HandleFunc("/book/", controllers.GetBook).Methods("GET")
